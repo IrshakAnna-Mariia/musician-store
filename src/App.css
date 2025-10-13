@@ -181,6 +181,57 @@
   }
 }
 
+.consult-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #2a2d3e;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.consult-form label {
+  font-weight: bold;
+}
+
+.consult-form input,
+.consult-form select,
+.consult-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  background-color: #3f435a;
+  color: white;
+}
+
+.consult-form input::placeholder,
+.consult-form textarea::placeholder {
+  color: #cccccc;
+}
+
+.consult-form button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.consult-form button:hover {
+  background-color: #e6c200;
+}
+
 .footer {
   background: linear-gradient(135deg, #3f435a, #6d708f);
   color: white;

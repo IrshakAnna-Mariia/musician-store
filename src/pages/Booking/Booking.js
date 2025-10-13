@@ -1,14 +1,17 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+
+import PhoneNumber from "components/PhoneNumber";
+import InstrumentType from "components/InstrumentType";
+import Question from "components/Question";
 
 const Booking = () => {
-  const phoneRef = useRef();
+  const [phone, setPhone] = useState("");
   const instrumentRef = useRef();
   const commentRef = useRef();
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    const phone = phoneRef.current.value;
     const instrument = instrumentRef.current.value;
     const comment = commentRef.current.value;
 
@@ -18,46 +21,24 @@ const Booking = () => {
     );
 
     // Clean values
-    phoneRef.current.value = "";
+    setPhone("");
     instrumentRef.current.value = null;
     commentRef.current.value = "";
   };
 
+  const handleChangePhone = (event) => {
+    setPhone(event.target.value);
+  };
+
   return (
-    <section class="consult-form-section">
+    <section className="consult-form-section">
       <h2>Book a Consult</h2>
-      <form onSubmit={handleFormSubmit} class="consult-form">
-        <label for="phone">Phone Number:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="e.g. +1 555 123 4567"
-          required
-          ref={phoneRef}
-        />
+      <form onSubmit={handleFormSubmit} className="consult-form">
+        <PhoneNumber value={phone} onChange={handleChangePhone} />
 
-        <label for="instrument">Instrument Type:</label>
-        <select id="instrument" name="instrument" ref={instrumentRef} required>
-          <option value="">-- Select an instrument --</option>
-          <option value="guitar">Guitar</option>
-          <option value="piano">Piano</option>
-          <option value="drums">Drums</option>
-          <option value="violin">Violin</option>
-          <option value="vocals">Vocals</option>
-          <option value="dj">DJ / Production</option>
-          <option value="other">Other</option>
-        </select>
+        <InstrumentType ref={instrumentRef} />
 
-        <label for="comment">Your Question or Message:</label>
-        <textarea
-          id="comment"
-          name="comment"
-          rows="5"
-          placeholder="Tell us what you're looking for..."
-          ref={commentRef}
-          required
-        ></textarea>
+        <Question ref={commentRef} />
 
         <button type="submit">Submit</button>
       </form>

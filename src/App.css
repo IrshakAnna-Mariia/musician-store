@@ -101,6 +101,26 @@
   font-family: Arial, Helvetica, sans-serif; */
 }
 
+.about-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+  color: #e0e0e0;
+}
+
+.about-us h2,
+.about-us h3 {
+  color: #ffd700;
+}
+
+.about-us ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left;
+}
+
 .home-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns desktop */

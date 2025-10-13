@@ -9,7 +9,7 @@ const Header = () => {
         style={{ width: "70px", height: "70px" }}
         alt="logo"
       />
-      <nav>
+      <nav className="navigation">
         <ul>
           <li>
             <a href="/home" className="App-link">

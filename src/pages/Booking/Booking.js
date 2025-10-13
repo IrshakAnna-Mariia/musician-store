@@ -20,6 +20,9 @@ const Booking = () => {
       Your submission:\nPhone Number: ${phone} \nInstrument Type: ${instrument} \nYour Question or Message: ${comment}`
     );
 
+    // Commented because using musician-store instead of little lemon site
+    // submitAPI({ phone, instrumentRef, commentRef })
+
     // Clean values
     setPhone("");
     instrumentRef.current.value = null;

@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+🎵 Musician Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application built with React that allows users to browse musical instruments, book consultations, and learn more about music services.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+🎸 Browse a curated list of musical instruments
 
-### `npm start`
+📅 Book a consultation directly from the website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📄 Learn more through dedicated pages: Homepage, About, Blog
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+💡 Responsive design optimized for mobile and desktop
 
-### `npm test`
+♿ Accessible layout and navigation based on WCAG principles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Tech Stack
 
-### `npm run build`
+React (Functional components, Hooks)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React Router for navigation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CSS Grid & Flexbox for layout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Jest + React Testing Library for unit tests
 
-### `npm run eject`
+📁 Project Structure
+musician-store/
+├── public/
+│ └── musician-logo.png
+├── src/
+│ ├── components/
+│ │ ├── Header/
+│ │ ├── Footer/
+│ │ ├── InstrumentType/
+│ │ ├── PhoneNumber/
+│ │ ├── Question/
+│ ├── Main/
+│ ├── pages/
+│ │ ├── Home/
+│ │ ├── About/
+│ │ ├── Blog/
+│ │ ├── Booking/
+│ ├── App.js
+│ ├── App.css
+│ ├── main.jsx
+├── README.md
+└── package.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📦 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone https://github.com/IrshakAnna-Mariia/musician-store.git
+cd musician-store
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run dev
 
-### Code Splitting
+🧪 Running Tests
+npm run test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Uses @testing-library/react for component tests.
 
-### Analyzing the Bundle Size
+✍️ Booking Form Example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Includes a custom form to book a consultation with the store. Fields:
 
-### Making a Progressive Web App
+Phone number
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Instrument type
 
-### Advanced Configuration
+Comment/question
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Submit button
 
-### Deployment
+Values are managed using React Refs or State.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🌐 Accessibility
 
-### `npm run build` fails to minify
+Built with POUR accessibility principles:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Perceivable
+
+Operable
+
+Understandable
+
+Robust
+
+Semantic HTML and ARIA roles where needed
+
+📱 Responsive Design
+
+CSS Grid layout for 3-column layout on desktop
+
+Single column for mobile (via media queries)
+
+Images and cards scale responsively

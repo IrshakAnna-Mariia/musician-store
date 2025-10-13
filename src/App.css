@@ -93,14 +93,21 @@
   }
 }
 
-.container {
+.main-content {
+  min-height: 100vh;
+  background-color: #2a2d3e;
+  /* font-size: 1.25rem;
+  color: #6d708f;
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+.home-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns desktop */
   gap: 24px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #2a2d3e;
 }
 
 /* Card Styling */
@@ -143,13 +150,13 @@
 
 /* Responsive Breakpoints */
 @media (max-width: 900px) {
-  .container {
+  .home-container {
     grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
   }
 }
 
 @media (max-width: 600px) {
-  .container {
+  .home-container {
     grid-template-columns: 1fr; /* Mobile: 1 column */
   }
 }
